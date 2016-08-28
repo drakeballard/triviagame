@@ -2,3 +2,8 @@ body {
 	background-image: url("../images/nfl_nation.jpg");
 	background-size: 100%;
 }
+h1 {
+	color: white;
+	text-align: center;
+	font-size: 40px;
+}
