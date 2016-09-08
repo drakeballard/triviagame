@@ -1,5 +1,7 @@
 alert("Welcome to the NFL Trivia Challenge");
 
+
+var questions = [
 // // Questions
 // Who has the most wins as a head coach in the NFL? (George Halas, Curly Lambeau, Tom Landry, Don Shula)
 //   Don Shula
@@ -17,3 +19,4 @@ alert("Welcome to the NFL Trivia Challenge");
 //   4
 // 4 of the first 5 picks in the 1989 draft -- Troy Aikman, Barry Sanders, Derrick Thomas and Deion Sanders -- are in the Hall of Fame. Who was the bust? (Aundray Bruce, Blair Thomas, Keith McCants, Tony Mandarich)
 //   Tony Mandarich
+]
