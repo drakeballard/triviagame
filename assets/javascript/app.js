@@ -1,4 +1,10 @@
-alert("Welcome to the NFL Trivia Challenge");
+//Trial - making sure that the js link is properly linked.
+// alert("Welcome to the NFL Trivia Challenge");
+
+//Game scenario setup with certain requirements
+
+
+
 
 
 var questions = [
