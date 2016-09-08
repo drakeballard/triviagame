@@ -8,23 +8,30 @@
 
 
 
-// // Questions
+// Questions --> keep in mind that the correct answers have to eb reflected with the array (0,1,2, and etc.)
 var questions =
-// Who has the most wins as a head coach in the NFL? (George Halas, Curly Lambeau, Tom Landry, Don Shula)
-//   Don Shula
+// Question: "Who has the most wins as a head coach in the NFL?",
+// Answers: (George Halas, Curly Lambeau, Tom Landry, Don Shula)
+// Correct: 3
 //
-// Which NFL team features a helmet decal only on one side of the helmet? (Houston Texans, Jacksonville Jaguars, Pittsburgh Steelers, Tennessee Titans)
-//   Pittsburgh Steelers
+// Question: "Which NFL team features a helmet decal only on one side of the helmet?"
+// Answers: (Houston Texans, Jacksonville Jaguars, Pittsburgh Steelers, Tennessee Titans)
+// Correct: 2
 //
-// Who is the last non-quarterback to win NFL MVP? (Shaun Alexander, Ray Lewis, Adrian Peterson, LaDainian Tomlinson)
-//   Adrian Peterson
+// Question: "Who is the last non-quarterback to win NFL MVP?"
+// Answers: (Shaun Alexander, Ray Lewis, Adrian Peterson, LaDainian Tomlinson)
+// Correct: 2
 //
-// This current NFL quarterback, a 2010 Pro Bowler, never started a game at QB in college? (Matt Schaub, Matt Cassel, Matt Moore, Matt Flynn)
-//   Matt Cassel
+// Question: "This current NFL quarterback, a 2010 Pro Bowler, never started a game at QB in college?"
+// Answers: (Matt Schaub, Matt Cassel, Matt Moore, Matt Flynn)
+// Correct: 1
 //
-// How many Heisman Trophy winners have gone on to be MVP of the Super Bowl? (2,3,4,5)
-//   4
-// 4 of the first 5 picks in the 1989 draft -- Troy Aikman, Barry Sanders, Derrick Thomas and Deion Sanders -- are in the Hall of Fame. Who was the bust? (Aundray Bruce, Blair Thomas, Keith McCants, Tony Mandarich)
-//   Tony Mandarich
+// Question: "How many Heisman Trophy winners have gone on to be MVP of the Super Bowl?"
+//Answers: (2,3,4,5)
+//Correct: 2
+//
+// Question: "4 of the first 5 picks in the 1989 draft -- Troy Aikman, Barry Sanders, Derrick Thomas and Deion Sanders -- are in the Hall of Fame. Who was the bust?"
+// Answers: (Aundray Bruce, Blair Thomas, Keith McCants, Tony Mandarich)
+// Correct: 3
 
 //The game needs to start somehow right here.
