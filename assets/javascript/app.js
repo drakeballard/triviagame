@@ -7,8 +7,9 @@
 
 
 
-var questions = [
+
 // // Questions
+var questions =
 // Who has the most wins as a head coach in the NFL? (George Halas, Curly Lambeau, Tom Landry, Don Shula)
 //   Don Shula
 //
@@ -25,4 +26,5 @@ var questions = [
 //   4
 // 4 of the first 5 picks in the 1989 draft -- Troy Aikman, Barry Sanders, Derrick Thomas and Deion Sanders -- are in the Hall of Fame. Who was the bust? (Aundray Bruce, Blair Thomas, Keith McCants, Tony Mandarich)
 //   Tony Mandarich
-]
+
+//The game needs to start somehow right here.
