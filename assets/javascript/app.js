@@ -39,3 +39,21 @@ Correct: 3
 
 
 //The game needs to start somehow right here.
+
+
+//The Game Starts
+
+
+//page opens and needs to be refreshed
+
+
+//the actual game will start now
+
+
+//The timer will have a countdown of 20 seconds. Needs to be converted to mili-second.
+
+
+//Random question needs to be selected.
+
+
+//
