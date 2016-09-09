@@ -57,4 +57,13 @@ var timer = 20;
 //Random question needs to be selected.
 
 
+//User gets to select an answer.
+
+
+//IF Statements need to occur. If or else (win or lose)
+
+
+//Creating a function that states that the game is over
+
+
 //
