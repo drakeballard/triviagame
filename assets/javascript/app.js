@@ -66,4 +66,4 @@ var timer = 20;
 //Creating a function that states that the game is over
 
 
-//
+//User has the right to replay the game or quit
