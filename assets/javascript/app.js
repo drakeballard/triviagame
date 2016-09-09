@@ -2,13 +2,21 @@
 // alert("Welcome to the NFL Trivia Challenge");
 
 //Game scenario setup with certain requirements
+var index = 0;
+var gameOver = false;
+var missed = 2;
+var right = true;
+var timer = 20;
 
 
 
 
 
 
-// Questions --> keep in mind that the correct answers have to eb reflected with the array (0,1,2, and etc.)
+
+
+
+// Questions --> keep in mind that the correct answers have to be reflected with the array (0,1,2, and etc.)
 var questions =
 // Question: "Who has the most wins as a head coach in the NFL?",
 // Answers: (George Halas, Curly Lambeau, Tom Landry, Don Shula)
