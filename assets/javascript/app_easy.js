@@ -2,7 +2,7 @@
 
 $('#start').on('click',function(){
   // $('#subwrapper').remove();
-  
+
   for(var i=0; i<questions.length; i++){
     $('#subwrapper').append('<h2>' +questions[i].question+ '</h2>');
     for(var x=0; x<questions[i].answers.length;x++){
@@ -38,3 +38,15 @@ var questions = [{
   answers: ["Aundray Bruce", "Blair Thomas", "Keith McCants", "Tony Mandarich"],
   correct: "Tony Mandarich"
 }];
+
+// need to apply some game structure, such as correct , incorrect and the initial timer.
+var game = {
+  correct: 0,
+  incorrect:0,
+  counter:100,
+  countdown: function(){
+    //descending
+    game.counter--;
+    $('#counter').html(game.counter);
+  }
+}
