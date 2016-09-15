@@ -1,9 +1,15 @@
 //start button function
 $("#start").on('click', function(){
-  $("#subwrapper").remove();
+  //using a for loop
+  for(var i=0;i<questions.length;i++){
+    $("#subwrapper").append("<h2>"+questions[i].question+"</h2");
+    for(var j=0;j<questions[i].answers.length;j++){
+      $("#subwrapper").append("<input type='radio' name='question-"+i+" ' value='"+questions[i].answers[j]+"'>"+questions[i].answers[j]);
+    }
+  }
 })
 
-//questions array
+//questions array = 6 total
 var questions = [{
   question: "Who has the most wins as a head coach in the NFL?",
   answers: ["George Halas", "Curly Lambeau", "Tom Landry", "Don Shula"],
