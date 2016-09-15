@@ -1,14 +1,6 @@
 //start button function
 $("#start").on('click', function(){
-  //after inital click the start button will be removed
-  $("#start").remove();
-  //using a for loop
-  for(var i=0;i<questions.length;i++){
-    $("#subwrapper").append("<h2>"+questions[i].question+"</h2");
-    for(var j=0;j<questions[i].answers.length;j++){
-      $("#subwrapper").append("<input type='radio' name='question-"+i+" ' value='"+questions[i].answers[j]+"'>"+questions[i].answers[j]);
-    }
-  }
+  game.start();
 })
 
 //questions array = 6 total
@@ -37,3 +29,38 @@ var questions = [{
   answers: ["Aundray Bruce", "Blair Thomas", "Keith McCants", "Tony Mandarich"],
   correct: "Tony Mandarich"
 }];
+
+//creating objects
+var game = {
+  correct: 0,
+  incorrect: 0,
+  counter: 120,
+  countdown: function(){
+    game.counter--;
+    //The actual counter ID still needs to be added
+    $('#counter').html(game.counter);
+    if(game.counter<=0){
+      console.log("time is up!");
+      //not created yet
+      game.done();
+    }
+  },
+
+  //after inital click, the start button will be removed
+  //as start is clicked the timer will begin
+
+  start: function(){
+    timer = setInterval(game.countdown, 1000);
+    // timer = setInterval(game.countown,1000);
+    $('#subwrapper').prepend('<h2>Time Remaining: <span id="counter">120</span> Seconds </h2>');
+    $("#start").remove();
+    //using a for loop
+    for(var i=0;i<questions.length;i++){
+      $("#subwrapper").append("<h2>"+questions[i].question+"</h2>");
+      for(var j=0;j<questions[i].answers.length;j++){
+        $("#subwrapper").append("<input type='radio' name='question-"+i+" ' value='"+questions[i].answers[j]+"'>"+questions[i].answers[j]);
+  }
+}
+}
+
+}
