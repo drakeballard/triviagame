@@ -1,5 +1,7 @@
 //start button function
 $("#start").on('click', function(){
+  //after inital click the start button will be removed
+  $("#start").remove();
   //using a for loop
   for(var i=0;i<questions.length;i++){
     $("#subwrapper").append("<h2>"+questions[i].question+"</h2");
