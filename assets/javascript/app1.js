@@ -39,7 +39,7 @@ var game = {
     game.counter--;
     //The actual counter ID still needs to be added
     $('#counter').html(game.counter);
-    if(game.counter<=0){
+    if(game.counter===0){
       console.log("time is up!");
       //not created yet
       game.done();
@@ -61,7 +61,51 @@ var game = {
         $("#subwrapper").append("<input type='radio' name='question-"+i+" ' value='"+questions[i].answers[j]+"'>"+questions[i].answers[j]);
       }
     }
-  }
+  },
+  //adding the done function
+// done: function(){
+//     $.each($("input[name='question-0']:checked"),function(){
+//       if($(this).val()==question[0].correctAnswer){
+//         game.correct++;
+//     } else {
+//         game.incorrect++;
+//     }
+//     });
+//     $.each($("input[name='question-1']:checked"),function(){
+//       if($(this).val()==question[1].correctAnswer){
+//         game.correct++;
+//     } else {
+//         game.incorrect++;
+//     };
+//     $.each($("input[name='question-2']:checked"),function(){
+//       if($(this).val()==question[2].correctAnswer){
+//         game.correct++;
+//     } else {
+//         game.incorrect++;
+//     }
+//     });
+//     $.each($("input[name='question-3']:checked"),function(){
+//       if($(this).val()==question[3].correctAnswer){
+//         game.correct++;
+//     } else {
+//         game.incorrect++;
+//     };    $.each($("input[name='question-4']:checked"),function(){
+//         if($(this).val()==question[4].correctAnswer){
+//             game.correct++;
+//         } else {
+//             game.incorrect++;
+//         }
+//         });
+//     $.each($("input[name='question-5']:checked"),function(){
+//         if($(this).val()==question[5].correctAnswer){
+//             game.correct++;
+//         } else {
+//             game.incorrect++;
+//         }
+//   });
+  // //
+  // this.result();
+  // },
 }
   //adding the done function
   // done: function(){
