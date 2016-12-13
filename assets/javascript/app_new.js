@@ -48,10 +48,10 @@ $(document).on('click','#end', function() {
    },
    start: function(){
      timer = setInterval(game.countdown,1000);
-     $('#subwrapper').prepend('<h2> Time Reamining: <span id="counter">90</span> Seconds</h2>');
+     $('#subwrapper').prepend('<h3> Time Reamining: <span id="counter">90</span> Seconds</h3>');
      $('#start').remove();
       for(var i=0; i<questions.length;i++){
-        $('#subwrapper').append('<h2>'+questions[i].question+'</h2>');
+        $('#subwrapper').append('<h3>'+questions[i].question+'</h3>');
         for(var j=0;j<questions[i].answers.length;j++){
           $("#subwrapper").append("<input type='radio' name='question-"+i+"' value='"+questions[i].answers[j]+"'>"+questions[i].answers[j])
         }
@@ -105,9 +105,9 @@ $(document).on('click','#end', function() {
     },
     result: function() {
       clearInterval(timer);
-      $('#subwrapper h2').remove();
+      $('#subwrapper h3').remove();
 
-      $('#subwrapper').html("<h2> All Done!!!</h2>");
+      $('#subwrapper').html("<h3> All Done!!!</h3>");
       $('#subwrapper').append("<h3> Correct Answers: " +this.correct+"</h3>");
       $('#subwrapper').append("<h3> Incorrect Answers: " +this.incorrect+"</h3>");
       $('#subwrapper').append("<h3>Unanswered: "+(questions.length-(this.incorrect+this.correct))+"</h3>");
