@@ -3,7 +3,7 @@
 $('#start').on('click',function(){
   // $('#subwrapper').remove();
 
-})
+}) 
 
 $(document).on('click', '#end',function(){
   game.done();
