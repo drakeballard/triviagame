@@ -2,6 +2,10 @@
    game.start();
  })
 
+$(document).on('click','#end', function() {
+  game.done();
+})
+
  var questions = [{
    question: "Who has the most wins as a head coach in the NFL?",
    answers: ["George Halas", "Curly Lambeau", "Tom Landry", "Don Shula"],
@@ -52,6 +56,7 @@
           $("#subwrapper").append("<input type='radio' name='question-"+i+"' value='"+questions[i].answers[j]+"'>"+questions[i].answers[j])
         }
       }
+      $('#subwrapper').append('<br><button id="end">DONE</button>')
     },
     done: function() {
       $.each($("input[name='question-0']:checked"), function() {
