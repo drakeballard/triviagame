@@ -1,21 +1,33 @@
-html {
+/*html {
 	background-image: url("../images/nfl_nation.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
-}
+}*/
 
-/*h1, #title {
+body, .background {
+  background-image: url("../images/nfl_nation.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+h1, #title {
 	color: white;
 	text-align: center;
 	font-size: 40px;
-}*/
+}
+
 h2 {
 	color: black;
 
 }
 
-#subwrapper {
-	background-color: #ffffff;
-	opacity: 60%;
+div.transbox {
+
+	margin: 30px;
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.6;
+  filter: alpha(opacity=60); /* For IE8 and earlier */
+	color: black;
 }
