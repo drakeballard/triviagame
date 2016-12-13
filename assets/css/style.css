@@ -5,6 +5,7 @@
 	background-attachment: fixed;
 }*/
 
+/*Provides the background*/
 body, .background {
   background-image: url("../images/nfl_nation.jpg");
 	background-repeat: no-repeat;
@@ -22,8 +23,8 @@ h2 {
 
 }
 
+/*Provides the transparency*/
 div.transbox {
-
 	margin: 30px;
   background-color: #ffffff;
   border: 1px solid black;
